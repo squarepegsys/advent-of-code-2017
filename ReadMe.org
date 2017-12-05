@@ -1,0 +1,6 @@
+* Squarepegsys' Advent of Code
+
+My answers for 2017's Advent of Code.
+
+I write tests! They require [[http://pythontesting.net/framework/nose/nose-introduction/][nosetest]] to run
+
