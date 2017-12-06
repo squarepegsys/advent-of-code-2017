@@ -5,12 +5,14 @@ def test_bank_redist():
 
 def redistribute(banks):
 
-    realloct = [banks]
+    realloct = []
 
     iterations=0
 
     
-    while True:
+    while banks not in realloct:
+
+        realloct.append(banks)
         # need to copy it each time, cuz Python does references here
         banks = [x for x in banks]
 
@@ -29,12 +31,6 @@ def redistribute(banks):
             max_val-=1
 
         iterations+=1
-
-        if (banks in realloct):
-            break
-
-        realloct.append(banks)
-        
 
     return iterations,banks
 
